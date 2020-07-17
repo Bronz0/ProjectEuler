@@ -31,8 +31,9 @@ numbers = "73167176531330624919225119674426574742355349194934\
 05886116467109405077541002256983155200055935729725\
 71636269561882670428252483600823257530420752963450"
 maxProd = 0
-for i in range(len(numbers)-13):
+for i in range(len(numbers)-12):
     prod = product(numbers[i:i+13])
     if prod > maxProd:
-        resultat = prod
-print(resultat)
+        maxProd = prod
+print(maxProd)
+# answer is 23514624000
