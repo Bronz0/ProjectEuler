@@ -15,3 +15,6 @@ def digitSum(n):
 print(digitSum(2**1000))
 
 # Answer: 1366
+
+# method 2 
+print(sum([int(x) for x in str(2**1000)]))
